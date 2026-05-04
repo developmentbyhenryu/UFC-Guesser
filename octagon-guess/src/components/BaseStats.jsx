@@ -1,11 +1,11 @@
-export default function BaseStats() {
+export default function BaseStats({ fighter }) {
   return (
-    <div className="flex justify-center gap-4 mb-4">
-      <div className="bg-gray-900 px-4 py-2 rounded-lg">
-        Lightweight
+    <div className="flex justify-center gap-3 mb-6">
+      <div className="bg-gray-800 px-4 py-2 rounded-full text-sm font-semibold">
+        {fighter.weightClass}
       </div>
-      <div className="bg-gray-900 px-4 py-2 rounded-lg">
-        34-9
+      <div className="bg-gray-800 px-4 py-2 rounded-full text-sm font-semibold">
+        {fighter.record}
       </div>
     </div>
   );
